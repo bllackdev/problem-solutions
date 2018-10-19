@@ -1,8 +1,8 @@
 /*
 Autor: Raphael Renato
 Problema: Desenvolver um programa que dada a entrada de
-uma string, mostre-a totalmente em maiúscula,
-depois totalmente em minúscula e por último mostre
+uma string, mostre-a totalmente em maiÃºscula,
+depois totalmente em minÃºscula e por Ãºltimo mostre
 a string original.
 */
 
@@ -16,13 +16,13 @@ int main(){
 	
 	printf("Digite uma String: ");
 	gets(frase);
-	tamanho = strlen(frase); //pega o tamanho da String (só o que foi digitado)
+	tamanho = strlen(frase); //pega o tamanho da String (sÃ³ o que foi digitado)
 	
-	for(i=0; i<tamanho;i++){
+	for(i=0; i<=tamanho;i++){
 		a[i] = toupper(frase[i]); //Converte a string em MAIUSCULO, pegando cada letra
-								  //da frase. 	
+					  //da frase. 	
 		b[i] = tolower(frase[i]); //Converte a string em MINUSCULO, pegando cada letra
-								  //da frase.
+					  //da frase.
 		 
 	}
 	printf("\nString em Maiusculo: %s\n", a);
